@@ -1,0 +1,113 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="TQPMODatabase.SiteMaster" %>
+
+<!DOCTYPE html>
+<script>  
+    $(function () {
+        $("#metaData").load("metaData.html");
+        $("#viewtitle").load("ViewTitle.html");
+    });
+
+    //let mainTitleIn = sessionStorage.getItem("mainTitleIn") 
+    //document.getElementById('mainTitle').innerHTML = mainTitleIn;
+    //alert('1  ' + mainTitleIn);
+</script>
+
+ <script>   
+    window.onload = function () {
+        let mainTitleIn = sessionStorage.getItem("mainTitleIn") 
+        document.getElementById('mainTitle').innerHTML = mainTitleIn; 
+    }
+</script> 
+
+<style>
+    /*.radioBL input[type="radio"] {
+    margin-right: 10px;
+}*/
+
+    .rbl2 input[type="radio"] {
+        width: 30px;
+        -ms-transform: scale(0.7);
+        -webkit-transform: scale(0.7);
+        transform: scale(0.7);
+        display: inline-block;
+        justify-content: center;
+        /*display: flex;*/
+        Font-Size: 4px !important;
+        /*flex-direction: column-reverse;*/
+        align-items: center;
+        vertical-align: middle;
+        margin: 0px;
+    }
+</style>
+<html lang="en">
+<head runat="server">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/CSS/TQPMOStyleSheet.css" type="text/css" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script type="text/javascript" src="script.js" async></script>
+    <%-- <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />--%>
+    <title><%: Page.Title %>  </title>
+
+    <asp:ContentPlaceHolder ID="Stylesheets" runat="server">
+        <link rel="stylesheet" href="/CSS/TQPMOStyleSheet.css" type="text/css" />
+    </asp:ContentPlaceHolder>
+
+    <asp:PlaceHolder runat="server">
+        <%: Scripts.Render("~/bundles/modernizr") %>
+    </asp:PlaceHolder>
+
+    <webopt:BundleReference runat="server" Path="~/Content/css" />
+    <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+
+</head>
+<body>
+    <form runat="server">
+
+        <asp:Button runat="server" Style="height: 20px; width: auto; font-size: 12px; float: right; margin-left: 10px; text-align: center; text-align: center; line-height: 1px; border-radius: 10px; -webkit-border-radius: 10px; box-shadow: 0 1px 2px #5e5d5b; margin-top: 15px;" Text=">>>" OnClientClick="javascript:window.close(), window.open('FrmMenuPrincipal.aspx'); return false" />
+
+        <asp:RadioButtonList CssClass="rbl2" ID="RadioButtonList1" runat="server" Font-Size="10px" AutoPostBack="True" RepeatColumns="2" TextAlign="Right" Style="padding-right: 15px; display: inline-block; float: right; height: auto;"
+            OnSelectedIndexChanged="ChangeLanguage">
+            <asp:ListItem Value="1" Text="Français" />
+            <asp:ListItem Value="2" Text="English" />
+        </asp:RadioButtonList>
+
+        <div class="row col-lg-12" style="text-align: center; align-content: center;">
+
+            <div style="height: 150px; overflow: hidden; background-image: url(Images/PMOLogo2.jpg); background-repeat: no-repeat; background-size: 100% 100%;">
+                <asp:Label ID="mainTitle" CssClass="lblposition" Text=" " runat="server" ForeColor="black" />
+            </div>
+
+            <style>
+                .lblposition {
+                    font-size: 30px;
+                    /*font-weight: bold;*/
+                    top: 15px;
+                    height: 21px;
+                    width: auto;
+                    padding-top: 10px;
+                    /*position: absolute;  
+                    text-align: center;
+                    left: 33.33%;  
+                     display: inline;*/
+                }
+            </style>
+        </div>
+
+        <div class=" " style="width: auto;">
+        </div>
+
+        <div class="container body-content">
+            <asp:ContentPlaceHolder ID="MainContent" runat="server">
+            </asp:ContentPlaceHolder>
+
+            <%--  <footer>--%>
+            <%--  <p>&copy; <%: DateTime.Now.Year %> - Telus PMO</p>--%>
+            <%--  </footer>  --%>
+        </div>
+        <%-- Style="border-style:solid; border-color:red; height:300px;"--%>
+    </form>
+</body>
+</html>
