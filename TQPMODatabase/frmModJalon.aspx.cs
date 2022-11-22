@@ -10,7 +10,7 @@ namespace TQPMODatabase
             // language = "1"; //1 Francais - 2 English  
             if (Session["language"] != null)
             {
-                language = Session["language"].ToString();
+                language = Session["language"].ToString();                
             }
             else
             {

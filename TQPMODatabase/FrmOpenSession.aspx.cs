@@ -38,7 +38,7 @@ namespace TQPMODatabase
                     cnn.Open();
 
                     object StatusUser = cmd.ExecuteScalar();
-                    //cmd.Dispose();
+                     cmd.Dispose();
                     if (StatusUser != null)
                     {
                         if ((bool)StatusUser)

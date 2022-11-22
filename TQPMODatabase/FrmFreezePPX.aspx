@@ -57,18 +57,18 @@
                                     }
                                 </script>
                                 <div class="col-lg-12" style="height: 15px;"></div>
-                                <div class="col-lg-12 ">
+                               <%-- <div class="col-lg-12 ">--%>
                                     <div class="col-lg-4" style="display: flex; align-items: center; justify-content: center; text-align: left;">
-                                        <asp:Button ID="BtnFigerPPOYes" runat="server" Style="height: 20px; width: 124px; display: inline-block; font-size: 12px; text-align: center; line-height: 1px;" Text="" CssClass="button1" OnClientClick="BtnFigerPPOYes_Click" />
+                                        <asp:Button ID="BtnFigerPPOYes" runat="server" Style="height: 25px; width: 124px; display: inline-block; font-size: 12px; text-align: center; line-height: 1px; border-radius: 10px; -webkit-border-radius: 10px; box-shadow: 0 1px 2px #5e5d5b;" Text="" CssClass="button1" OnClientClick="BtnFigerPPOYes_Click" />
                                     </div>
                                     <div class="col-lg-4" style="display: flex; align-items: center; justify-content: center; text-align: right;">
-                                        <asp:Button ID="BtnFigerPPONo" runat="server" Style="height: 20px; width: 124px; display: inline-block; font-size: 12px; text-align: center; line-height: 1px;" Text="" CssClass="button1" OnClientClick="BtnFigerPPONo_Click" />
+                                        <asp:Button ID="BtnFigerPPONo" runat="server" Style="height: 25px; width: 124px; display: inline-block; font-size: 12px; text-align: center; line-height: 1px; border-radius: 10px; -webkit-border-radius: 10px; box-shadow: 0 1px 2px #5e5d5b;" Text="" CssClass="button1" OnClientClick="BtnFigerPPONo_Click" />
                                     </div>
                                     <div class="col-lg-4" style="display: flex; align-items: center; justify-content: center; text-align: right;">
-                                        <asp:Button ID="BtnCancel1" runat="server" Style="height: 20px; width: 124px; display: inline-block; font-size: 12px; text-align: center; line-height: 1px;" Text="" CssClass="button1"
+                                        <asp:Button ID="BtnCancel1" runat="server" Style="height: 25px; width: 124px; display: inline-block; font-size: 12px; text-align: center; line-height: 1px; border-radius: 10px; -webkit-border-radius: 10px; box-shadow: 0 1px 2px #5e5d5b;" Text="" CssClass="button1"
                                             OnClientClick="javascript:window.close(), window.open('TQPMOAcceuil.aspx', '_self');   return false" />
                                     </div>
-                                </div>
+                             <%--   </div>--%>
                             </div>
 
                             <div class="col-lg-12 " runat="server" id="divPop6" visible="false" style="align-content: center;">
@@ -85,13 +85,13 @@
                                 <div class="col-lg-12" style="height: 15px;"></div>
                                 <div class="col-lg-12 ">
                                     <div class="col-lg-4" style="display: flex; align-items: center; justify-content: center; text-align: left;">
-                                        <asp:Button ID="BtnFigerPPOYesYes" runat="server" Style="height: 20px; width: 124px; display: inline-block; font-size: 12px; text-align: center; line-height: 1px;" Text="" CssClass="button1" OnClientClick="BtnFigerPPOYesYes_Click" />
+                                        <asp:Button ID="BtnFigerPPOYesYes" runat="server" Style="height: 25px; width: 124px; display: inline-block; font-size: 12px; text-align: center; line-height: 1px; border-radius: 10px; -webkit-border-radius: 10px; box-shadow: 0 1px 2px #5e5d5b;" Text=""  OnClientClick="BtnFigerPPOYesYes_Click" />
                                     </div>
                                     <div class="col-lg-4" style="display: flex; align-items: center; justify-content: center; text-align: right;">
-                                        <asp:Button ID="BtnFigerPPONoNo" runat="server" Style="height: 20px; width: 124px; display: inline-block; font-size: 12px; text-align: center; line-height: 1px;" Text="" CssClass="button1" OnClientClick="BtnFigerPPONoNo_Click" />
+                                        <asp:Button ID="BtnFigerPPONoNo" runat="server" Style="height: 25px; width: 124px; display: inline-block; font-size: 12px; text-align: center; line-height: 1px; border-radius: 10px; -webkit-border-radius: 10px; box-shadow: 0 1px 2px #5e5d5b;" Text=""  OnClientClick="BtnFigerPPONoNo_Click" />
                                     </div>
                                     <div class="col-lg-4" style="display: flex; align-items: center; justify-content: center; text-align: right;">
-                                        <asp:Button ID="BtnCancel2" runat="server" Style="height: 20px; width: 124px; display: inline-block; font-size: 12px; text-align: center; line-height: 1px;" Text="" CssClass="button1" OnClientClick="javascript:window.close(), window.open('TQPMOAcceuil.aspx', '_self');   return false" />
+                                        <asp:Button ID="BtnCancel2" runat="server" Style="height: 25px; width: 124px; display: inline-block; font-size: 12px; text-align: center; line-height: 1px; border-radius: 10px; -webkit-border-radius: 10px; box-shadow: 0 1px 2px #5e5d5b;" Text=""   OnClientClick="javascript:window.close(), window.open('TQPMOAcceuil.aspx', '_self');   return false" />
                                     </div>
                                 </div>
                                 <br />
@@ -113,7 +113,7 @@
                                 <div class="col-lg-12" style="height: 15px;"></div>
                                 <div class="col-lg-12" style="">
                                     <div class="col-lg-4" style=""></div>
-                                    <div class="col-lg-4" style="border-style: solid; border-color: red;">
+                                    <div class="col-lg-4"  >
                                         <asp:TextBox runat="server" Type="date" Style="margin: auto; width: 95%;"></asp:TextBox>
                                     </div>
                                     <div class="col-lg-4" style=""></div>
@@ -122,11 +122,10 @@
                                 <div class="col-lg-12">
                                     <div class="col-lg-3"></div>
                                     <div class="col-lg-3">
-                                        <asp:Button ID="BtnSave" runat="server" Style="height: 20px; width: 124px; display: inline-block; font-size: 12px; text-align: center; line-height: 1px;" Text=" " CssClass="button1" Enabled="false" />
-
+                                        <asp:Button ID="BtnSave" runat="server" Style="height: 25px; width: 124px; display: inline-block; font-size: 12px; text-align: center; line-height: 1px; border-radius: 10px; -webkit-border-radius: 10px; box-shadow: 0 1px 2px #5e5d5b;" Text=" " CssClass="button1" Enabled="false" />
                                     </div>
                                     <div class="col-lg-3 ">
-                                        <asp:Button ID="BtnCancel3" runat="server" Style="height: 20px; width: 124px; display: inline-block; font-size: 12px; text-align: center; line-height: 1px;" Text=" " CssClass="button1" OnClientClick="javascript:window.close(), window.open('TQPMOAcceuil.aspx', '_self');   return false" />
+                                        <asp:Button ID="BtnCancel3" runat="server" Style="height: 25px; width: 124px; display: inline-block; font-size: 12px; text-align: center; line-height: 1px; border-radius: 10px; -webkit-border-radius: 10px; box-shadow: 0 1px 2px #5e5d5b;" Text=" " CssClass="button1" OnClientClick="javascript:window.close(), window.open('TQPMOAcceuil.aspx', '_self');   return false" />
 
                                     </div>
                                     <div class="col-lg-3 "></div>

@@ -152,7 +152,7 @@
                 <div class="row">
                     <div class="header2 col-lg-1">
                         <asp:Button runat="server" CssClass="button1"
-                            OnClientClick="javascript:window.close(), window.open('FrmAjoutII.aspx', '_self');   return false" />
+                            OnClientClick="javascript:window.close(), window.open('FrmAddII.aspx', '_self');   return false" />
                     </div>
                     <div class="header2 col-lg-11">
                         <label id="label3" class="headerTitle2"></label>

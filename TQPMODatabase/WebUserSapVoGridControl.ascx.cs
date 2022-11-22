@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Data;
-using System.Web.UI.WebControls;
+using System.Web.UI.WebControls; 
 
 namespace TQPMODatabase
 {
@@ -12,11 +12,11 @@ namespace TQPMODatabase
         public string language;
 
         protected void Page_Load(object sender, EventArgs e)
-        {
+        {          
             DateTime previousYear = DateTime.Now.AddYears(-1);
             DateTime currentYear = DateTime.Now;
             DateTime nextYear = DateTime.Now.AddYears(+1);
-
+             
             RadioButtonListSAPVO1.Items[0].Text = previousYear.Year.ToString();
             RadioButtonListSAPVO1.Items[1].Text = currentYear.Year.ToString();
             RadioButtonListSAPVO1.Items[2].Text = nextYear.Year.ToString();

@@ -9,7 +9,7 @@ namespace TQPMODatabase
         public string language;
         public string idOut;
         public string idIn;
-        public string deleteII;
+        public string deleteII; 
         public string deleteIIname;
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -30,7 +30,7 @@ namespace TQPMODatabase
             yearIn.Items[2].Text = nextYear.Year.ToString();
 
             if (!IsPostBack)
-            {
+            { 
                 idIn = Request.QueryString["Arg1"];
                 deleteII = Request.QueryString["Arg2"];
                 deleteIIname = Request.QueryString["Arg3"];
@@ -42,7 +42,7 @@ namespace TQPMODatabase
                 {
                     DeleteII(deleteII, deleteIIname);
                     Response.Redirect("FrmIIList.aspx", false);
-                }
+                } 
             }
             if (IsPostBack)
             {
@@ -70,7 +70,7 @@ namespace TQPMODatabase
 
                         cnn.Open();
                         cmd.ExecuteNonQuery();
-                        //cmd.Dispose();
+                         cmd.Dispose();
                         //cnn.Close();
                         Response.Redirect("FrmIIList.aspx", false);
                     }
@@ -139,7 +139,7 @@ namespace TQPMODatabase
                                 ii++;
                             }
                         }
-                        //cmd.Dispose();
+                        cmd.Dispose();
                         //cnn.Close();
                     }
                 }
@@ -180,7 +180,7 @@ namespace TQPMODatabase
                         cmd.Parameters.AddWithValue("@Id", deleteII);
                         cnn.Open();
                         cmd.ExecuteNonQuery();
-                        //cmd.Dispose();
+                         cmd.Dispose();
                         //cnn.Close();
                     }
 

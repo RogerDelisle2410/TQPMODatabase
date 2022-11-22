@@ -18,7 +18,7 @@ namespace TQPMODatabase
             else
             {
                 Session["language"] = "1";
-            }
+            } 
 
             DataTable dt = new DataTable();
             SqlConnection cnn = new SqlConnection(Session["connectionString"].ToString());
@@ -28,10 +28,10 @@ namespace TQPMODatabase
                 Connection = cnn,
                 CommandType = System.Data.CommandType.StoredProcedure,
                 CommandText = "sp_frmUserList"
-            };
+            }; 
 
             SqlDataAdapter da = new SqlDataAdapter(cmd);
-
+             
             da.Fill(dt);
             cnn.Close();
             da.Dispose();

@@ -11,71 +11,71 @@ namespace TQPMODatabase
 {
 
 
-    public partial class FrmModifyUser
+    public partial class FrmAddUser
     {
 
         /// <summary>
-        /// telusCodeIn control.
+        /// telusCode control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox telusCodeIn;
+        protected global::System.Web.UI.WebControls.TextBox telusCode;
 
         /// <summary>
-        /// TelusCodeValidator control.
+        /// CodeTelusFieldValidator control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator TelusCodeValidator;
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator CodeTelusFieldValidator;
 
         /// <summary>
-        /// sapCodeIn control.
+        /// sapCode control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox sapCodeIn;
+        protected global::System.Web.UI.WebControls.TextBox sapCode;
 
         /// <summary>
-        /// nameIn control.
+        /// name control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox nameIn;
+        protected global::System.Web.UI.WebControls.TextBox name;
 
         /// <summary>
-        /// nameInValidator control.
+        /// nameFieldValidator control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator nameInValidator;
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator nameFieldValidator;
 
         /// <summary>
-        /// emailIn control.
+        /// email control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox emailIn;
+        protected global::System.Web.UI.WebControls.TextBox email;
 
         /// <summary>
-        /// roleIn control.
+        /// role control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox roleIn;
+        protected global::System.Web.UI.WebControls.TextBox role;
 
         /// <summary>
         /// roleValidator control.
@@ -96,13 +96,13 @@ namespace TQPMODatabase
         protected global::System.Web.UI.WebControls.DropDownList statusIn;
 
         /// <summary>
-        /// mgmtIn control.
+        /// mgmt control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox mgmtIn;
+        protected global::System.Web.UI.WebControls.TextBox mgmt;
 
         /// <summary>
         /// mgmtValidator control.

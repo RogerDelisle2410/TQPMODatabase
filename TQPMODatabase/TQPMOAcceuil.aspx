@@ -247,7 +247,7 @@
                             </div>
                             <span class="popup">
                                 <a id="label141" class="popuptext">
-                                    <span class="aLabel" onclick="javascript:window.close(), window.open('FrmNewUser.aspx', '_self'); return false">Ajouter un nouvel Usager  
+                                    <span class="aLabel" onclick="javascript:window.close(), window.open('FrmAddUser.aspx', '_self'); return false">Ajouter un nouvel Usager  
 
                                     </span>
                                     <br />
@@ -259,7 +259,7 @@
 
                             <span class="popup">
                                 <a id="label142" class="popuptext">
-                                    <span class="aLabel" onclick="javascript:window.close(), window.open('FrmNewUser.aspx', '_self'); return false">Add a new User 
+                                    <span class="aLabel" onclick="javascript:window.close(), window.open('FrmAddUser.aspx', '_self'); return false">Add a new User 
                                     </span>
                                     <br />
                                     <br />
@@ -270,7 +270,7 @@
 
                             <span class="popup">
                                 <a id="label143" class="popuptext">
-                                    <span class="aLabel" onclick=" javascript: window.close(), window.open('FrmAjoutII.aspx', '_self'); return false;">Ajouter un nouvel II
+                                    <span class="aLabel" onclick=" javascript: window.close(), window.open('FrmAddII.aspx', '_self'); return false;">Ajouter un nouvel II
                                     </span>
                                     <br />
                                     <br />
@@ -281,7 +281,7 @@
 
                             <span class="popup">
                                 <a id="label144" class="popuptext">
-                                    <span class="aLabel" onclick="javascript:window.close(), window.open('FrmAjoutII.aspx', '_self'); return false">Add a new II 
+                                    <span class="aLabel" onclick="javascript:window.close(), window.open('FrmAddII.aspx', '_self'); return false">Add a new II 
                                     </span>
                                     <br />
                                     <br />

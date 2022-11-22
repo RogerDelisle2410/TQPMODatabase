@@ -46,7 +46,7 @@
                 <label>&nbsp;&nbsp;&nbsp</label>
                  <div class="col-lg-3" style="display: flex; align-items: center; justify-content: center; text-align: left;">
                     <asp:Button ID="button2" runat="server" Style="  height: 25px; width: auto; display: inline-block; font-size: 12px; text-align: center; line-height: 1px; border-radius: 10px; -webkit-border-radius: 10px; box-shadow: 0 1px 2px #5e5d5b;"
-                        Text=" " OnClientClick="javascript:window.close(), window.open('FrmNewUser.aspx', '_self'); return false"/> 
+                        Text=" " OnClientClick="javascript:window.close(), window.open('FrmAddUser.aspx', '_self'); return false"/> 
                 </div>
                 <script>   
                     if (<%=language%> == "1") {

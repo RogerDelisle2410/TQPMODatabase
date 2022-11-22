@@ -97,7 +97,7 @@
                             </div>
                         </div>
 
-                        <div class="col-lg-12 " style="height: 10px;">
+                      <%--  <div class="col-lg-12 " style="height: 10px;">--%>
                             <div class="col-lg-4 "></div>
 
                             <div class="col-lg-2" style="display: flex; align-items: center; justify-content: center; text-align: left;">
@@ -111,7 +111,7 @@
                             </div>
 
 
-                        </div>
+                      <%--  </div>--%>
                         <script>   
                             if (<%=language%> == "1") {
                                 document.getElementById('MainContent_button1').value = "Sauvegarder";

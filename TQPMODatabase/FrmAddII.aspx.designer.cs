@@ -11,107 +11,125 @@ namespace TQPMODatabase
 {
 
 
-    public partial class FrmModifyUser
+    public partial class FrmAddII
     {
 
         /// <summary>
-        /// telusCodeIn control.
+        /// IInum control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox telusCodeIn;
+        protected global::System.Web.UI.WebControls.TextBox IInum;
 
         /// <summary>
-        /// TelusCodeValidator control.
+        /// IInumValidator control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator TelusCodeValidator;
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator IInumValidator;
 
         /// <summary>
-        /// sapCodeIn control.
+        /// IInam control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox sapCodeIn;
+        protected global::System.Web.UI.WebControls.TextBox IInam;
 
         /// <summary>
-        /// nameIn control.
+        /// IInameValidator control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox nameIn;
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator IInameValidator;
 
         /// <summary>
-        /// nameInValidator control.
+        /// yearIn control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator nameInValidator;
+        protected global::System.Web.UI.WebControls.DropDownList yearIn;
 
         /// <summary>
-        /// emailIn control.
+        /// provIn control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox emailIn;
+        protected global::System.Web.UI.WebControls.DropDownList provIn;
 
         /// <summary>
-        /// roleIn control.
+        /// PrgmMgr control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox roleIn;
+        protected global::System.Web.UI.WebControls.TextBox PrgmMgr;
 
         /// <summary>
-        /// roleValidator control.
+        /// PrgmMgrValidator control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.CompareValidator roleValidator;
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator PrgmMgrValidator;
 
         /// <summary>
-        /// statusIn control.
+        /// PrgmLead control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList statusIn;
+        protected global::System.Web.UI.WebControls.TextBox PrgmLead;
 
         /// <summary>
-        /// mgmtIn control.
+        /// NewProgram control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox mgmtIn;
+        protected global::System.Web.UI.WebControls.TextBox NewProgram;
 
         /// <summary>
-        /// mgmtValidator control.
+        /// PrgmGrp control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.CompareValidator mgmtValidator;
+        protected global::System.Web.UI.WebControls.TextBox PrgmGrp;
+
+        /// <summary>
+        /// TsoPrgm control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox TsoPrgm;
+
+        /// <summary>
+        /// MidLevel control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox MidLevel;
 
         /// <summary>
         /// button1 control.

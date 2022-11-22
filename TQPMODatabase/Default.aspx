@@ -252,7 +252,7 @@
 
                     <span class="popup">
                         <a id="label141" class="popuptext">
-                            <label onclick="javascript:window.close(), window.open('FrmNewUser.aspx', '_self' );  return false">
+                            <label onclick="javascript:window.close(), window.open('FrmAddUser.aspx', '_self' );  return false">
                                 Ajouter un nouvel Usager 
                             </label>
                             <br />
@@ -265,7 +265,7 @@
 
                     <span class="popup">
                         <a id="label142" class="popuptext">
-                            <label onclick="javascript:window.close(), window.open('FrmNewUser.aspx'); return false">
+                            <label onclick="javascript:window.close(), window.open('FrmAddUser.aspx'); return false">
                                 Add a new User 
                             </label>
                             <br />
@@ -278,7 +278,7 @@
 
                     <span class="popup">
                         <a id="label143" class="popuptext">
-                            <label onclick=" javascript: window.close(), window.open('FrmAjoutII.aspx'); return false;">
+                            <label onclick=" javascript: window.close(), window.open('FrmAddII.aspx'); return false;">
                                 Ajouter un nouvel II
                             </label>
                             <br />
@@ -291,7 +291,7 @@
 
                     <span class="popup">
                         <a id="label144" class="popuptext">
-                            <label onclick="javascript:window.close(), window.open('FrmNewUser.aspx'); return false">
+                            <label onclick="javascript:window.close(), window.open('FrmAddUser.aspx'); return false">
                                 Add a new II 
                             </label>
                             <br />

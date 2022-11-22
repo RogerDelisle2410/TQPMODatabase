@@ -11,8 +11,7 @@
     <script src="https://cdn.datatables.net/1.13.1/css/jquery.dataTables.min.css"></script>
 
     <%--<div id="metaData"></div>--%>
-    <script> 
-
+    <script>  
 
         $(function () {
             //$("#metaData").load("metaData.html");
@@ -30,12 +29,10 @@
         function DeleteSelectedRow(lnk) {
             var rowIn = lnk.parentNode.parentNode;
             var row = rowIn.rowIndex;
-            var Id = document.getElementById('<%= GridView.ClientID %>').rows[row].cells[0].innerText; 
-            var iinam = document.getElementById('<%= GridView.ClientID %>').rows[row].cells[3].innerText; 
-            //javascript: window.close(), window.open('FrmModifyII.aspx?Arg2=' + Id, '_self'); return false;
-            //alert(Id + '  ' + iinam);
-            javascript: window.close(), window.open("FrmModifyII.aspx?Arg2=" + Id + "&Arg3=" + iinam + "", "_self"); return false; 
-        }
+            var Id = document.getElementById('<%= GridView.ClientID %>').rows[row].cells[0].innerText;
+            var iinam = document.getElementById('<%= GridView.ClientID %>').rows[row].cells[3].innerText;
+            javascript: window.close(), window.open("FrmModifyII.aspx?Arg2=" + Id + "&Arg3=" + iinam + "", "_self"); return false;
+        }  
     </script>
 
     <div class="column" style="background-color: white; width: 3%;"></div>
@@ -65,20 +62,11 @@
                 <asp:LinkButton runat="server" OnClick="ClearBox">  
                 <img Type="submit" runat="server" style="float: left; width: 20px; margin-left: -40px; align-content: center;"  src="/Images/deleteX.jpg" /> 
                 </asp:LinkButton>
-                <label>&nbsp;&nbsp;&nbsp</label>
-                <%--<asp:Button ID="button11" Type="submit" runat="server" Style="height: 20px; width: 124px; display: inline-block; font-size: 12px; text-align: center; line-height: 1px; border-radius: 10px; -webkit-border-radius: 10px; box-shadow: 0 1px 2px #5e5d5b; float: left;" Text="  " OnClick="BindGrid" />
-                <script>  
-                    if (<%=language%> == "1") {
-                        document.getElementById('MainContent_button11').value = "Rechercher";
-                    } else {
-                        document.getElementById('MainContent_button11').value = "Search";
-                    }
-                </script>--%>
-                <%-- onkeyup="Search_Gridview(this)"    OnClick="button11_Click"    --%>
+                <label>&nbsp;&nbsp;&nbsp</label> 
 
                 <div class="col-lg-3" style="display: flex; align-items: center; justify-content: center; text-align: left;">
                     <asp:Button ID="button1" runat="server" Style="visibility: hidden; height: 25px; width: auto; display: inline-block; font-size: 12px; text-align: center; line-height: 1px; border-radius: 10px; -webkit-border-radius: 10px; box-shadow: 0 1px 2px #5e5d5b;"
-                        Text=" " />
+                        Text=" " OnClick="DeleteCheckedRecords  "/>
                 </div>
                 <script>   
                     if (<%=language%> == "1") {
@@ -87,9 +75,9 @@
                         document.getElementById('MainContent_button1').value = "Delete";
                     }
                 </script>
-                 <div class="col-lg-3" style="display: flex; align-items: center; justify-content: center; text-align: left;">
-                    <asp:Button ID="button2" runat="server" Style="  height: 25px; width: auto; display: inline-block; font-size: 12px; text-align: center; line-height: 1px; border-radius: 10px; -webkit-border-radius: 10px; box-shadow: 0 1px 2px #5e5d5b;"
-                        Text=" " OnClientClick="javascript:window.close(), window.open('FrmAjoutII.aspx', '_self'); return false"/> 
+                <div class="col-lg-3" style="display: flex; align-items: center; justify-content: center; text-align: left;">
+                    <asp:Button ID="button2" runat="server" Style="height: 25px; width: auto; display: inline-block; font-size: 12px; text-align: center; line-height: 1px; border-radius: 10px; -webkit-border-radius: 10px; box-shadow: 0 1px 2px #5e5d5b;"
+                        Text=" " OnClientClick="javascript:window.close(), window.open('FrmAddII.aspx', '_self'); return false" />
                 </div>
                 <script>   
                     if (<%=language%> == "1") {
@@ -211,6 +199,7 @@
                     </tr>
                 </table>
             </div>
+          
             <div class="col-lg-1" style="">
                 <asp:LinkButton Style="float: right; padding-top: 2px; padding-left: 10px;" runat="server"
                     OnClientClick="javascript:window.close(), window.open('TQPMOAcceuil.aspx', '_self'); return false">
@@ -221,23 +210,30 @@
 
 
         </div>
-        <script type="text/javascript">
 
-            function myFunction(id) {
+          <asp:HiddenField ID="hdnfldVariable" runat="server" />
+        <script type="text/javascript">
+           
+            function myFunction(lnk) {
                 document.getElementById('<%=button1.ClientID %>').style.visibility = "hidden";
                 var grid = document.getElementById("<%= GridView.ClientID %>");
                 var cell;
-
+               Int16Array   = [];
                 if (grid.rows.length > 0) {
                     for (i = 1; i < grid.rows.length; i++) {
                         cell = grid.rows[i].cells[1];
+                        cell2 = grid.rows[i].cells[0].innerHTML;
+
                         for (j = 0; j < cell.childNodes.length; j++) {
                             if (cell.childNodes[j].type == "checkbox") {
                                 if (cell.childNodes[j].checked) {
-                                    document.getElementById('<%=button1.ClientID %>').style.visibility = "visible";
-                                }
+                               document.getElementById('<%=button1.ClientID %>').style.visibility = "visible";  
+                                    Int16Array.push(  cell2  );
+                                    document.getElementById('<%=hdnfldVariable.ClientID%>').value =  Int16Array ; 
+                                    //alert(Int16Array);
+                                } 
                             }
-                        }
+                        } 
                     }
                 }
             }

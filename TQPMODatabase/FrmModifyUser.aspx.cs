@@ -11,6 +11,8 @@ namespace TQPMODatabase
         public string UserId;
         public string deleteUser;
         public string deleteUserName;
+        public string leLanguage;
+
         protected void Page_Load(object sender, EventArgs e)
         {
             if (Session["language"] != null)
@@ -61,7 +63,7 @@ namespace TQPMODatabase
 
                         cnn.Open();
                         cmd.ExecuteNonQuery();
-                        //cmd.Dispose();
+                         cmd.Dispose();
                         //cnn.Close();
 
                         Response.Redirect("FrmUserList.aspx", false);
@@ -107,7 +109,7 @@ namespace TQPMODatabase
                             statusIn.SelectedIndex = 0;  /*(bit)oReader["StatusUser"];*/
                             mgmtIn.Text = oReader["ID_Manager"].ToString();
                         }
-                        //cmd.Dispose();
+                        cmd.Dispose();
                         //cnn.Close();
                     }
                 }
@@ -148,7 +150,7 @@ namespace TQPMODatabase
                         cmd.Parameters.AddWithValue("@userId", deleteUser);
                         cnn.Open();
                         cmd.ExecuteNonQuery();
-                        //cmd.Dispose();
+                         cmd.Dispose();
                         //cnn.Close();
 
                     }

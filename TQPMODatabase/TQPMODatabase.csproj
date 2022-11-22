@@ -149,6 +149,11 @@
     <Reference Include="System.Collections.Immutable, Version=1.2.5.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
       <HintPath>..\packages\System.Collections.Immutable.1.7.1\lib\net461\System.Collections.Immutable.dll</HintPath>
     </Reference>
+    <Reference Include="System.Collections.NonGeneric, Version=4.0.2.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Collections.NonGeneric.4.3.0\lib\net46\System.Collections.NonGeneric.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System.ComponentModel" />
     <Reference Include="System.ComponentModel.Annotations, Version=4.2.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
       <HintPath>..\packages\System.ComponentModel.Annotations.4.7.0\lib\net461\System.ComponentModel.Annotations.dll</HintPath>
@@ -292,14 +297,14 @@
     <Content Include="FrmAccueil.aspx" />
     <Content Include="FrmAdjProfiling.aspx" />
     <Content Include="FrmAdminSection.aspx" />
-    <Content Include="FrmAjoutII.aspx" />
+    <Content Include="FrmAddII.aspx" />
     <Content Include="FrmAjoutRSUB.aspx" />
     <Content Include="FrmFreezePPX.aspx" />
     <Content Include="FrmIIlist.aspx" />
     <Content Include="FrmModifyII.aspx" />
     <Content Include="FrmModifyUser.aspx" />
     <Content Include="FrmModJalon.aspx" />
-    <Content Include="FrmNewUser.aspx" />
+    <Content Include="FrmAddUser.aspx" />
     <Content Include="FrmOpenSession.aspx" />
     <Content Include="FrmParamVar.aspx" />
     <Content Include="FrmPersoSettings.aspx" />
@@ -434,12 +439,12 @@
     <Compile Include="FrmAdminSection.aspx.designer.cs">
       <DependentUpon>FrmAdminSection.aspx</DependentUpon>
     </Compile>
-    <Compile Include="FrmAjoutII.aspx.cs">
-      <DependentUpon>FrmAjoutII.aspx</DependentUpon>
+    <Compile Include="FrmAddII.aspx.cs">
+      <DependentUpon>FrmAddII.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="FrmAjoutII.aspx.designer.cs">
-      <DependentUpon>FrmAjoutII.aspx</DependentUpon>
+    <Compile Include="FrmAddII.aspx.designer.cs">
+      <DependentUpon>FrmAddII.aspx</DependentUpon>
     </Compile>
     <Compile Include="FrmAjoutRSUB.aspx.cs">
       <DependentUpon>FrmAjoutRSUB.aspx</DependentUpon>
@@ -483,12 +488,12 @@
     <Compile Include="FrmModJalon.aspx.designer.cs">
       <DependentUpon>FrmModJalon.aspx</DependentUpon>
     </Compile>
-    <Compile Include="FrmNewUser.aspx.cs">
-      <DependentUpon>FrmNewUser.aspx</DependentUpon>
+    <Compile Include="FrmAddUser.aspx.cs">
+      <DependentUpon>FrmAddUser.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="FrmNewUser.aspx.designer.cs">
-      <DependentUpon>FrmNewUser.aspx</DependentUpon>
+    <Compile Include="FrmAddUser.aspx.designer.cs">
+      <DependentUpon>FrmAddUser.aspx</DependentUpon>
     </Compile>
     <Compile Include="FrmOpenSession.aspx.cs">
       <DependentUpon>FrmOpenSession.aspx</DependentUpon>

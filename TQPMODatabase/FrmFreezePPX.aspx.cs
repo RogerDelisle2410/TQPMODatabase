@@ -1,11 +1,11 @@
-﻿using System;
+﻿using System; 
 
 
 namespace TQPMODatabase
 {
     public partial class FrmFreezePPX : System.Web.UI.Page
     {
-        public string language;
+        public string language; 
         protected void Page_Load(object sender, EventArgs e)
         {
             // language = "1"; //1 Francais - 2 English  
@@ -28,7 +28,7 @@ namespace TQPMODatabase
             //    Session["mainTitleIn"]  = "Freeze the PPX";
             //} 
 
-            divPop4.Visible = true;
+            divPop4.Visible = true; 
             divPop5.Visible = true;
             divPop6.Visible = false;
 

@@ -159,10 +159,9 @@ body {
     float: left;
     margin-left: 10px;
 }
-
+ 
 .frmRechJalon2 {
-    align-content: center;
-    margin-top: 10px;
+    align-content: center; 
     font-size: 14px;
     color: black;
     text-align: left;
@@ -177,7 +176,14 @@ body {
     height: 25px;
     display: inline-block;
 }
-
+.frmRechJalon5 {
+    align-content: center;
+    font-size: 14px;
+    color: black;
+    text-align: left;
+    float: right;
+    margin-left: 10px;
+}
 .BtnQuit {
     font-size: 16px;
     color: black;
@@ -233,7 +239,7 @@ button {
     background-size: auto;*/
 }
 
-.button1 {
+/*.button1 {
     height: 38px;
     width: 38px;
     margin-top: 5px;
@@ -246,7 +252,7 @@ button {
     border-radius: 10px;
     -webkit-border-radius: 10px;
     box-shadow: 0 1px 2px #5e5d5b;
-}
+}*/
 
 .button4 {
     height: 20px;

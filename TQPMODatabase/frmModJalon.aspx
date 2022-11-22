@@ -20,9 +20,9 @@
             }
         </script>
         <div class="col-lg-12" style="padding-top: 2px;">
-           
+
             <hr />
-             
+
         </div>
         <table class="col-lg-12 ">
             <tr>
@@ -136,7 +136,7 @@
                                 <input style="display: inline-block; width: 155px; float: left;" />
                             </div>
                         </div>
-                         <div class="col-md-12" style="height:  15px;"></div>
+                        <div class="col-md-12" style="height: 15px;"></div>
 
 
                         <div class="row">
@@ -144,28 +144,28 @@
                             </div>
                         </div>
 
-                        <div class="col-lg-12 " style="height: 10px;">
-                            <div class="col-lg-4 "></div>
+                        <%--<div class="col-lg-12 " style="height: 10px;">--%>
+                        <div class="col-lg-4 "></div>
 
-                            <div class="col-lg-2" style="display: flex; align-items: center; justify-content: center; text-align: left;">
-                                <asp:Button ID="button2" runat="server" Style="height: 25px; width: 124px; display: inline-block; font-size: 12px; text-align: center; line-height: 1px; border-radius: 10px; -webkit-border-radius: 10px; box-shadow: 0 1px 2px #5e5d5b;"
-                                    Text=" " />
-                            </div>
-
-                            <div class="col-lg-2" style="display: flex; align-items: center; justify-content: center; text-align: left;">
-                                <asp:Button ID="button3" runat="server" Style="height: 25px; width: 124px; display: inline-block; font-size: 12px; text-align: center; line-height: 1px; border-radius: 10px; -webkit-border-radius: 10px; box-shadow: 0 1px 2px #5e5d5b;"
-                                    Text=" " OnClientClick="javascript:window.close(), window.open('TQPMOAcceuil.aspx', '_self'); return false"/>
-                            </div>
-
-                             
+                        <div class="col-lg-2" style="display: flex; align-items: center; justify-content: center; text-align: left;">
+                            <asp:Button ID="button2" runat="server" Style="height: 25px; width: 124px; display: inline-block; font-size: 12px; text-align: center; line-height: 1px; border-radius: 10px; -webkit-border-radius: 10px; box-shadow: 0 1px 2px #5e5d5b;"
+                                Text=" " />
                         </div>
+
+                        <div class="col-lg-2" style="display: flex; align-items: center; justify-content: center; text-align: left;">
+                            <asp:Button ID="button3" runat="server" Style="height: 25px; width: 124px; display: inline-block; font-size: 12px; text-align: center; line-height: 1px; border-radius: 10px; -webkit-border-radius: 10px; box-shadow: 0 1px 2px #5e5d5b;"
+                                Text=" " OnClientClick="javascript:window.close(), window.open('TQPMOAcceuil.aspx', '_self'); return false" />
+                        </div>
+
+
+                        <%--  </div>--%>
                         <script>   
                             if (<%=language%> == "1") {
                                 document.getElementById('MainContent_button2').value = "Sauvegarder";
-                                document.getElementById('MainContent_button3').value = "Annuler"; 
+                                document.getElementById('MainContent_button3').value = "Annuler";
                             } else {
                                 document.getElementById('MainContent_button2').value = "Save";
-                                document.getElementById('MainContent_button3').value = "Cancel"; 
+                                document.getElementById('MainContent_button3').value = "Cancel";
                             }
                         </script>
 
